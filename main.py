@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world_PythonGKE():
-    target = os.environ.get('TARGET', 'World')
+    target = os.environ.get('TARGET', 'World_CICD')
     return 'Hello {}!\n'.format(target)
 
 if __name__ == "__main__":
